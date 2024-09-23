@@ -1,10 +1,24 @@
+import { useEffect } from 'react';
 import { useData } from '../hooks/useData';
 
 const Home = () => {
   const { data } = useData({});
 
+  // Server-Sent Events (SSE)로 서버의 이벤트 처리
+  useEffect(() => {
+    const eventSource = new EventSource(`/events`);
+    eventSource.onmessage = function (event) {
+      console.log('Received message:', event.data);
+      if (event.data === 'refresh') window.location.reload(); // 페이지 새로고침
+    };
+    eventSource.onerror = (error) => console.error('SSE Error:', error);
+
+    // 컴포넌트가 언마운트될 때 SSE 연결 해제
+    return () => eventSource.close();
+  }, []);
+
   return (
-    <div className="flex flex-col w-screen h-screen bg-[url(image.png)] bg-cover bg-center">
+    <div className="flex flex-col w-screen h-screen bg-[url(/image.png)] bg-cover bg-center">
       <div className="text-center text-7xl font-medium tracking-wider my-8">퇴원약국 복약상담실</div>
       <div className="w-screen border-b border-gray-500 mb-8"></div>
       <div className="h-1/3 relative pt-16 mb-10">
