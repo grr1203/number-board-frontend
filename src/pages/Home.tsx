@@ -13,6 +13,8 @@ const Home = () => {
       if (event.data === 'refresh') {
         localStorage.setItem('playAudio', 'true'); // 재생 플래그 설정
         window.location.reload(); // 페이지 새로고침
+      } else if (event.data === 'refreshNotice') {
+        window.location.reload();
       }
     };
     eventSource.onerror = (error) => console.error('SSE Error:', error);
