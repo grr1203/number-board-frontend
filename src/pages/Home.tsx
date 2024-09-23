@@ -6,8 +6,8 @@ const Home = () => {
   const [notice] = useState('해당하는 창구로 상담받으러 오세요');
 
   return (
-    <div className="flex flex-col w-screen">
-      <div className="text-center text-7xl font-medium tracking-wider my-8 h-1/5">퇴원약국 복약상담실</div>
+    <div className="flex flex-col w-screen h-screen">
+      <div className="text-center text-7xl font-medium tracking-wider my-8">퇴원약국 복약상담실</div>
       <div className="w-screen border-b border-gray-500 mb-6"></div>
       <div className="h-2/5 relative pt-12 mb-10">
         <img src="/line.png" className="w-full h-44" />
@@ -23,7 +23,7 @@ const Home = () => {
           <div className="text-[150px] font-bold tracking-widest w-5/6 text-center">{number2}</div>
         </div>
       </div>
-      <div className="h-32 flex justify-center items-center mt-4 text-6xl font-bold text-center">{notice}</div>
+      <div className="h-32 flex justify-center items-center my-4 text-6xl font-bold text-center">{notice}</div>
     </div>
   );
 };
