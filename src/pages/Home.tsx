@@ -41,7 +41,7 @@ const Home = () => {
 
   return (
     <div className="flex flex-col w-screen h-screen bg-[url(/image.png)] bg-cover bg-center">
-      <div className="text-center text-7xl font-medium tracking-wider my-8">퇴원약국 복약상담실</div>
+      <div className="text-center text-7xl font-medium tracking-wider my-8">퇴원약 복약상담실</div>
       <audio src="/bell.mp3" ref={audioRef} />
       <div className="w-screen border-b border-gray-500 mb-8"></div>
       <div className="h-1/3 relative pt-16 mb-10">

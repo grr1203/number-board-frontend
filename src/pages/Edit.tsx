@@ -10,7 +10,7 @@ const Edit = () => {
       <div className="w-1/2 flex justify-center">
         <div className="w-1/2 flex justify-center items-center transform scale-[150%] border-8 border-slate-900">
           <div className="flex flex-col w-full h-full">
-            <div className="text-center text-2xl font-medium tracking-wider my-2">퇴원약국 복약상담실</div>
+            <div className="text-center text-2xl font-medium tracking-wider my-2">퇴원약 복약상담실</div>
             <div className="w-full border-b border-gray-500 mb-4"></div>
             <div className="relative mb-4">
               <img src="/line.png" className="w-full max-h-32" />
@@ -26,7 +26,7 @@ const Edit = () => {
                 <div className="text-4xl leading-9 font-bold tracking-widest w-5/6 text-center -ml-8">{data?.number2}</div>
               </div>
             </div>
-            <div className="flex justify-center items-center text-xl font-bold text-center mb-2">{data?.notice}</div>
+            <div className="flex justify-center items-center text-normal font-bold text-center mb-2">{data?.notice}</div>
           </div>
         </div>
       </div>
