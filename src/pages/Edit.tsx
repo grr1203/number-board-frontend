@@ -15,14 +15,14 @@ const Edit = () => {
             <div className="relative mb-4">
               <img src="/line.png" className="w-full max-h-32" />
               <div className="absolute inset-0 flex justify-between px-4 w-full">
-                <div className="text-white text-[25px] font-semibold w-1/6 min-w-32 mt-2 -ml-2">창구 1</div>
+                <div className="text-white text-2xl font-semibold w-1/6 min-w-32 mt-3 -ml-1">창구 1</div>
                 <div className="text-4xl font-bold tracking-widest w-5/6 text-center -ml-8">{data?.number1}</div>
               </div>
             </div>
             <div className="relative mb-4">
               <img src="/line.png" className="w-full max-h-32" />
               <div className="absolute inset-0 flex justify-between px-4 w-full">
-                <div className="text-white text-[25px] font-semibold w-1/6 min-w-32 mt-2 -ml-2">창구 2</div>
+                <div className="text-white text-2xl font-semibold w-1/6 min-w-32 mt-3 -ml-1">창구 2</div>
                 <div className="text-4xl leading-9 font-bold tracking-widest w-5/6 text-center -ml-8">{data?.number2}</div>
               </div>
             </div>
