@@ -6,7 +6,7 @@ const Edit = () => {
 
   return (
     <div className="flex sm:flex-row flex-col h-screen sm:justify-center items-center bg-[url(/image.png)] bg-cover bg-center overflow-hidden">
-      <div className="sm:w-1/2 flex justify-center mt-32 -mb-40 sm:mt-0 sm:mb-0">
+      <div className="sm:w-1/2 flex justify-center mt-20 -mb-24 sm:mt-0 sm:mb-0">
         <div className="w-1/2 flex justify-center items-center transform sm:scale-[150%] scale-[140%] border-slate-900 lg:border-8 border-4">
           <div className="flex flex-col w-full h-full overflow-hidden">
             <div className="text-center text-[#222] font-medium tracking-wide my-2 lg:text-2xl md:text-lg sm:text-sm sm:my-1">
@@ -21,7 +21,7 @@ const Edit = () => {
                   lg:text-xl lg:mt-2 lg:-ml-2 
                   md:text-base md:mt-1 md:-ml-3 md:mr-3 
                   sm:text-xs sm:mt-1 sm:-ml-3 sm:mr-4
-                  text-lg mt-2 -ml-1"
+                  text-lg mt-1 -ml-2"
                 >
                   창구 1
                 </div>
@@ -41,7 +41,7 @@ const Edit = () => {
                   lg:text-xl lg:mt-2 lg:-ml-2 
                   md:text-base md:mt-1 md:-ml-3 md:mr-3 
                   sm:text-xs sm:mt-1 sm:-ml-3 sm:mr-4
-                  text-lg mt-2 -ml-1"
+                  text-lg mt-1 -ml-2"
                 >
                   창구 2
                 </div>
@@ -105,13 +105,13 @@ const EditRow = ({ label }) => {
       </button>
       {label !== '안내말' ? (
         <button
-          className="min-w-16 text-sm bg-[#D00024] text-white py-2 px-3 mr-8 rounded focus:outline-none focus:shadow-outline"
+          className="min-w-20 text-sm bg-[#D00024] text-white py-2 px-2 mr-8 rounded focus:outline-none focus:shadow-outline"
           onClick={() => (label === '창구 1' ? refetchData1() : refetchData2())}
         >
           초기화
         </button>
       ) : (
-        <button className="min-w-16 py-2 px-3 mr-8 rounded"></button>
+        <button className="min-w-20 py-2 px-3 mr-8 rounded"></button>
       )}
     </div>
   );
