@@ -59,7 +59,7 @@ const Home = () => {
           <div className="text-[130px] font-bold tracking-wide w-5/6 text-center">{data?.number2}</div>
         </div>
       </div>
-      <div className="h-1/6 flex justify-center items-center my-5 text-6xl font-semibold text-[#444] text-center">{data?.notice}</div>
+      <div className="h-1/6 flex justify-center items-center my-5 text-6xl font-semibold text-[#333] text-center">{data?.notice}</div>
     </div>
   );
 };
